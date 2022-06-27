@@ -15,9 +15,11 @@ public class CharacterMovement : MonoBehaviour
     private float rollingTime = 0.2f;
     private float rollingCoolDown = 1f;
 
+
+
     [SerializeField] private float speed = 7f;
     [SerializeField] private float rollingSpeed = 16f;
-    [SerializeField] private float jumpspeed = 12f;
+    [SerializeField] private float jumpspeed = 40f;
 
     private enum MovementState {idle, running, jumping, falling };
 
@@ -113,4 +115,6 @@ public class CharacterMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
     }
+
+
 }
